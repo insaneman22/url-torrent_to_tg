@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) Shrimadhav U K | gautamajay52
+# (c) Shrimadhav U K 
 
 import os
 import time
@@ -40,11 +40,7 @@ TG_OFFENSIVE_API = Config.TG_OFFENSIVE_API
 CUSTOM_FILE_NAME = Config.CUSTOM_FILE_NAME
 LEECH_COMMAND = Config.LEECH_COMMAND
 YTDL_COMMAND = Config.YTDL_COMMAND
-RCLONE_CONFIG = Config.RCLONE_CONFIG
 DESTINATION_FOLDER = Config.DESTINATION_FOLDER
-GLEECH_COMMAND = Config.GLEECH_COMMAND
-INDEX_LINK = Config.INDEX_LINK
-TELEGRAM_LEECH_COMMAND_G = Config.TELEGRAM_LEECH_COMMAND_G
 CANCEL_COMMAND_G = Config.CANCEL_COMMAND_G
 GET_SIZE_G = Config.GET_SIZE_G
 STATUS_COMMAND = Config.STATUS_COMMAND
@@ -54,7 +50,6 @@ UPLOAD_AS_DOC = Config.UPLOAD_AS_DOC
 BOT_START_TIME = time.time()
 PYTDL_COMMAND_G = Config.PYTDL_COMMAND_G
 LOG_COMMAND = Config.LOG_COMMAND
-CLONE_COMMAND_G = Config.CLONE_COMMAND_G
 
 if os.path.exists("TorrentLeech-Gdrive.txt"):
 	with open("Torrentleech-Gdrive.txt", "r+") as f_d:
