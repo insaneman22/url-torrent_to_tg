@@ -6,7 +6,7 @@ class Config(object):
     # The Telegram API things
     APP_ID = int(os.environ.get("APP_ID", 12345))
     API_HASH = os.environ.get("API_HASH")
-    OWNER_ID = int(os.environ.get("OWNER_ID", 12345))
+    OWNER_ID = int(os.environ.get("OWNER_ID", 1204927413))
     # Get these values from my.telegram.org
     # to store the channel ID who are authorized to use the bot
     AUTH_CHANNEL = set(int(x) for x in os.environ.get("AUTH_CHANNEL", "").split())
@@ -38,9 +38,9 @@ class Config(object):
     LEECH_COMMAND = os.environ.get("LEECH_COMMAND", "leech")
     YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdl")
     RCLONE_CONFIG = os.environ.get("RCLONE_CONFIG", "")
-    DESTINATION_FOLDER = os.environ.get("DESTINATION_FOLDER", "TorrentLeech-Gdrive")
+    DESTINATION_FOLDER = os.environ.get("DESTINATION_FOLDER", "downloads")
     GLEECH_COMMAND = os.environ.get("GLEECH_COMMAND", "gleech")
-    INDEX_LINK = os.environ.get("INDEX_LINK", "")
+    INDEX_LINK = os.environ.get("INDEX_LINK", "https://mirror.technical-jigar.workers.dev/0:/downloads")
     TELEGRAM_LEECH_COMMAND_G = os.environ.get("TELEGRAM_LEECH_COMMAND_G", "tleech")
     CANCEL_COMMAND_G = os.environ.get("CANCEL_COMMAND_G", "cancel")
     GET_SIZE_G = os.environ.get("GET_SIZE_G", "getsize")
