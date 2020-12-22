@@ -35,7 +35,7 @@ class Config(object):
     # add offensive API
     TG_OFFENSIVE_API = os.environ.get("TG_OFFENSIVE_API", None)
     CUSTOM_FILE_NAME = os.environ.get("CUSTOM_FILE_NAME", "")
-    LEECH_COMMAND = os.environ.get("LEECH_COMMAND", "upload")
+    LEECH_COMMAND = os.environ.get("LEECH_COMMAND", "gen")
     YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdl")
     DESTINATION_FOLDER = os.environ.get("DESTINATION_FOLDER", "downloads")
     CANCEL_COMMAND_G = os.environ.get("CANCEL_COMMAND_G", "cancel")
