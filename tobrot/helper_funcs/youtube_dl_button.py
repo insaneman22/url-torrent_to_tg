@@ -94,7 +94,7 @@ async def youtube_dl_call_back(bot, update):
     await update.message.edit_caption(
         caption="trying to download"
     )
-    description = "@PublicLeech"
+    description = "@Universal_uploader_Robot"
     if "fulltitle" in response_json:
         description = response_json["fulltitle"][0:1021]
         # escape Markdown and special characters
