@@ -38,7 +38,15 @@ async def help_message_f(client, message):
     #message_id = 99
     # display the /help
     
-    await message.reply_text("""⚡ JOIN TORRENT MIRROR  GROUP\n\n 👉Link: <a href="https://t.me/joinchat/R9G7tRrp8yT0TKMQRYRRpQ">Universal Fast Mirror</a>""", disable_web_page_preview=True)
+    await message.reply_text("""gen - upload  Magnet/direct link to telegram file
+ytdl - upload  Youtube url to telegram file.
+pytdl -upload youtube playlist to telegram files.
+savethumbnail - set custom thumbnail: send a pic first than replay on that pic.
+clearthumbnail - clear default thumbnail
+status - all download status
+cancel - cancel upload
+all cmds will work when you replay to a link or file
+⚡ Universal Fast Mirror⚡""", disable_web_page_preview=True)
 
 
 async def rename_message_f(client, message):
