@@ -25,7 +25,7 @@ from tobrot import (
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
-from tobrot.helper_funcs.upload_to_tg import upload_to_tg, upload_to_gdrive
+from tobrot.helper_funcs.upload_to_tg import upload_to_tg
 
 
 async def youtube_dl_call_back(bot, update):
