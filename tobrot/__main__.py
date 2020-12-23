@@ -79,12 +79,6 @@ if __name__ == "__main__" :
     )
     app.add_handler(incoming_purge_message_handler)
     #
-    incoming_g_clear_handler = MessageHandler(
-        g_clearme,
-        filters=filters.command(["renewme"]) & filters.chat(chats=AUTH_CHANNEL)
-    )
-    app.add_handler(incoming_g_clear_handler)
-    #
     incoming_youtube_dl_handler = MessageHandler(
         incoming_youtube_dl_f,
         filters=filters.command([f"{YTDL_COMMAND}"]) & filters.chat(chats=AUTH_CHANNEL)
