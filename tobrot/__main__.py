@@ -38,7 +38,7 @@ from pyrogram import Client, filters
 from pyrogram.handlers import MessageHandler, CallbackQueryHandler
 
 from tobrot.plugins.new_join_fn import new_join_f, help_message_f, rename_message_f
-from tobrot.plugins.incoming_message_fn import incoming_message_f, incoming_youtube_dl_f, incoming_purge_message_f, g_yt_playlist
+from tobrot.plugins.incoming_message_fn import incoming_message_f, incoming_youtube_dl_f, incoming_purge_message_f
 from tobrot.plugins.status_message_fn import (
     status_message_f,
     cancel_message_f,
@@ -78,12 +78,6 @@ if __name__ == "__main__" :
         filters=filters.command(["purge"]) & filters.chat(chats=AUTH_CHANNEL)
     )
     app.add_handler(incoming_purge_message_handler)
-    #
-    incoming_size_checker_handler = MessageHandler(
-        check_size_g,
-        filters=filters.command([f"{GET_SIZE_G}"]) & filters.chat(chats=AUTH_CHANNEL)
-    )
-    app.add_handler(incoming_size_checker_handler)
     #
     incoming_g_clear_handler = MessageHandler(
         g_clearme,
