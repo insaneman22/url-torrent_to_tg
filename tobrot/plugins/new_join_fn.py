@@ -38,9 +38,9 @@ async def help_message_f(client, message):
     #message_id = 99
     # display the /help
     
-    await message.reply_text("""gen - upload  Magnet/direct link to telegram file
-ytdl - upload  Youtube url to telegram file.
-pytdl -upload youtube playlist to telegram files.
+    await message.reply_text("""gen - upload Magnet/direct link to telegram file
+ytdl - upload from any Youtube-dl supportd url to telegram file.
+pytdl -upload from any Youtube-dl supportd playlist to telegram files.
 savethumbnail - set custom thumbnail: send a pic first than replay on that pic.
 clearthumbnail - clear default thumbnail
 status - all download status
